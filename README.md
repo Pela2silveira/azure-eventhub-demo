@@ -18,7 +18,7 @@ repository = "https://github.com/Pela2silveira/azure-eventhub-demo"
 ```
 terraform init
 terraform apply --auto-approve
-sh post-apply.sh
+ . ./post-apply.sh
 cd scripts
 sh instructions.sh
 python3 producer.py
