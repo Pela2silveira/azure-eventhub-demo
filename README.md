@@ -1,7 +1,7 @@
 # azure-eventhub-demo
 
 # Introduction 
-Esta es una POC para el manejo de logs con fines de auditoría para el Banco Hipotecario.
+Esta es una POC para el manejo de logs en Azure
 
 Todo el ecosistema es privado, se compone de fluentbit para la ingesta, EventHub como un kafka intermedio para el encolamiento de logs y Data Exporer para el almacenamiento final y consulta utilizando KQL.
 
