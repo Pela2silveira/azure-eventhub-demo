@@ -1,15 +1,19 @@
 terraform {
+  required_version = ">= 1.7"
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = ">= 3.80.0"
+      version = ">= 3.93.0"
     }
     time = {
-      source = "hashicorp/time"
+      source  = "hashicorp/time"
       version = "0.10.0"
     }
+    azapi = {
+      source  = "azure/azapi"
+      version = "~>1.12.1"
+    }
   }
-  
 }
 
 
@@ -20,6 +24,3 @@ provider "azurerm" {
   client_id       = var.client_id
   client_secret   = var.client_secret
 }
-
-# provider "time" {
-# }

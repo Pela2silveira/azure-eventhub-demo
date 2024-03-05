@@ -1,0 +1,2 @@
+./post-apply.sh
+az network bastion ssh --subscription c5466e1c-59db-4bce-8110-96d5bd3fe43d  --name bastion-host --resource-group hipotecario-applogs-demo-01 --target-resource-id /subscriptions/c5466e1c-59db-4bce-8110-96d5bd3fe43d/resourceGroups/hipotecario-applogs-demo-01/providers/Microsoft.Compute/virtualMachines/producer --auth-type "ssh-key" --username user6 --ssh-key key
